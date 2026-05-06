@@ -24,10 +24,8 @@
 
 <br/>
 
-| | |
-|:---:|:---:|
-| **[🌐 Live Demo](https://nyaaysetu.vercel.app)** | **[🔌 API Docs](https://nyaaysetu-api.railway.app/docs)** |
-| **[📊 Dashboard](https://nyaaysetu.vercel.app/dashboard)** | **[📋 Officer Briefing](https://nyaaysetu.vercel.app/briefing)** |
+
+
 
 <br/>
 
@@ -163,16 +161,16 @@ Hybrid = **explainable** (rule-based) + **semantically deep** (Gemini) + **audit
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                      Next.js 14 Frontend                          │
+│                      Next.js 14 Frontend                         │
 │   /           /verify/[id]      /dashboard    /briefing  /login  │
 │  Upload    Split-pane PDF+AI   Actions+Risk  Inherited   RBAC    │
 └──────────────────────────┬───────────────────────────────────────┘
                            │  REST API (9 endpoints)
 ┌──────────────────────────▼───────────────────────────────────────┐
-│                      FastAPI Backend                               │
-│  POST /judgments/upload    GET /judgments/{id}/status             │
-│  PATCH /actions/{id}       GET /dashboard/summary                 │
-│  GET /officers/briefing    POST /auth/login                       │
+│                      FastAPI Backend                             │
+│  POST /judgments/upload    GET /judgments/{id}/status            │
+│  PATCH /actions/{id}       GET /dashboard/summary                │
+│  GET /officers/briefing    POST /auth/login                      │
 └────────┬─────────────────┬──────────────────┬────────────────────┘
          │                 │                  │
 ┌────────▼────────┐ ┌──────▼──────┐  ┌───────▼──────────┐
@@ -387,8 +385,8 @@ nyaaysetu/
 │       └── utils.ts              # contemptRiskColor · formatDate · confidenceLabel
 │
 ├── docs/
-│    └── sample-judgments/     # 5 real Karnataka HC judgment PDFs
-│  
+│   └── sample-judgments/     # 5 real Karnataka HC judgment PDFs
+│   
 │   
 │
 ├── .github/workflows/ci.yml  # pytest on every push → green checkmark
@@ -490,15 +488,7 @@ npm install && npm run dev
 
 ---
 
-## 🏆 The Opening Line
 
-When presenting NyaaySetu — to judges, investors, or government officials — open with this:
-
-> *"Every AI legal tool in India was built for judges inside the court.*
-> *NyaaySetu is the first system built for the government officer on the other side of the judgment —*
-> *the one who must comply or face contempt."*
-
----
 
 <div align="center">
 
@@ -518,4 +508,4 @@ When presenting NyaaySetu — to judges, investors, or government officials — 
 *₹0 infrastructure · 10/10 tests passing · `docker-compose up` · NIC-compatible*
 
 </div>
-# nyaaysetu
+
