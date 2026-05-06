@@ -387,9 +387,9 @@ nyaaysetu/
 │       └── utils.ts              # contemptRiskColor · formatDate · confidenceLabel
 │
 ├── docs/
-│   ├── demo-script.md        # Word-for-word 5-minute script · 2 storylines
-│   ├── judge-qa.md           # 20 judge questions + exact answers
-│   └── sample-judgments/     # 5 real Karnataka HC judgment PDFs
+│    └── sample-judgments/     # 5 real Karnataka HC judgment PDFs
+│  
+│   
 │
 ├── .github/workflows/ci.yml  # pytest on every push → green checkmark
 └── docker-compose.yml        # api + db + frontend · one command
